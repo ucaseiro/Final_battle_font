@@ -1,0 +1,714 @@
+
+body{ 
+  cursor : url(../img/cursor.png), pointer;
+  }
+
+.movement{
+  font-family: 'MovementV';
+  color: whitesmoke;
+}
+
+.sixtyhour{
+  font-family: 'sixtyhour';
+  color: rgb(222, 132, 15);
+}
+
+body{
+  width: 100vw;
+  overflow: hidden;
+  background-color: rgb(44, 44, 44);
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+main{
+  display: block;
+  position: relative;
+  width: 1700px;
+  overflow-x: hidden;
+  background-color: rgb(44, 44, 44);
+  height: 100vh;
+}
+
+/*Titre*/
+#battle{
+  font-family: 'MovementV';
+  position: relative;
+  left: 300px;
+  color: whitesmoke;
+  text-shadow: 0 0 10px #fff, 0 0 20px #c9c9c9, 0 0 30px #e4e4e4, 0 0 40px #e9e9e9, 0 0 50px #c3c3c3, 0 0 60px #bfbfbf, 0 0 70px #b9b9b9;
+  font-size: 150px;
+}
+#font{
+  font-family: 'sixtyhour';
+  position: relative;
+  left: 300px;
+  font-size: 120px;
+  color: rgb(255, 255, 255);
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e67b00, 0 0 40px #e66400, 0 0 50px #e66400, 0 0 60px #e66000, 0 0 70px #e66400;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ffa34d, 0 0 40px #ff974d, 0 0 50px #ff914d, 0 0 60px #ffa04d, 0 0 70px #ff944d, 0 0 80px #ff7c4d;
+  }
+}
+
+#battle:hover{
+  animation-duration: 2s;
+  animation-name: clignoter;
+  animation-iteration-count: infinite;
+}
+
+@keyframes clignoter {
+  0%   { opacity:0; }
+  30%   {opacity:1; }
+  35%   {opacity:0; }
+  40% { opacity: 1;}
+  80%{ opacity: 1;}
+  85%{opacity:0; }
+  90% { opacity: 1;}
+  95% { opacity: 0;}
+  100% { opacity:1; }
+}
+/*Page 1*/
+
+#p1piou{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  
+  font-size: 60px;
+  animation-name: courbepiou;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; /*nombre d'itération de l'animation*/
+  animation-direction: alternate;/*lire l'animation dans un sens puis dans l'autre*/
+  animation-fill-mode: forwards;/*si l'animation doit se terminer elle garde sa valeur finale*/
+	animation-delay : 0s;/*faire démarer une animation un peu en retard*/
+  animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+@keyframes courbepiou {
+  0%{
+    rotate: -30deg;
+    left: -722px;
+    font-variation-settings: "SPAC" 100, "wght" 200 ;
+  }
+  50%{
+    rotate: 0deg;
+    left: 700px;
+    top: 683px;
+    font-size: 90px;
+    font-variation-settings: "SPAC" 120, "wght" 700 ;
+  }
+  100%{
+    rotate: 30deg;
+    left: 1785px;
+    top: 321px;
+    font-size: 60px;
+    font-variation-settings: "SPAC" 100, "wght" 200 ;
+  }
+}
+
+#p1Ohoh{
+  position: absolute;
+  top: 750px;
+  left: 750px;
+  font-size: 45px;
+  font-variation-settings:"SCAN" 30, "BLED" 0;
+  animation-name: apla;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; /*nombre d'itération de l'animation*/
+  animation-direction: alternate;/*lire l'animation dans un sens puis dans l'autre*/
+  animation-fill-mode: forwards;/*si l'animation doit se terminer elle garde sa valeur finale*/
+	animation-delay : 0s;/*faire démarer une animation un peu en retard*/
+  animation-timing-function: linear;
+}
+
+@keyframes apla {
+
+  15%{
+    font-size: 45px;
+    font-variation-settings:"SCAN" 30, "BLED" 0;
+  }
+  37%{
+    font-size: 40px;
+    font-variation-settings:"SCAN" -10, "BLED" 100;
+  }
+  50%{
+    font-size: 40px;
+    font-variation-settings:"SCAN" -10, "BLED" 100;
+  }
+  55%{
+    font-size: 45px;
+    font-variation-settings:"SCAN" 30, "BLED" 0;
+  }
+}
+
+#p1HII{
+  position: absolute;
+  top: 482px;
+  left: -37px;
+  rotate: 76deg;
+  font-size: 197px;
+  font-variation-settings: "SPAC" 100, "wght" 300;
+}
+
+#p1AH{
+  position: absolute;
+  top: 709px;
+  left: 4px;
+  rotate: 7deg;
+  font-size: 103px;
+  font-variation-settings: "SPAC" 100, "wght" 300;
+  animation-name: shaking;
+  animation-duration:0.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction:normal;
+}
+
+#p1CRAC{
+  position: absolute;
+  top: 916px;
+  left: -80px;
+  rotate: 109deg;
+  font-size: 137px;
+  font-variation-settings: "SPAC" 100, "wght" 600;
+  
+}
+
+#p1ushh{
+  opacity: 0;
+  position: absolute;
+  top: 695px;
+  left:933px;
+  rotate: -26deg;
+  font-size: 30px;
+  font-variation-settings: "SPAC" 100, "wght" 200;
+  animation-name: opa;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; /*nombre d'itération de l'animation*/
+  animation-direction: alternate;/*lire l'animation dans un sens puis dans l'autre*/
+  animation-fill-mode: forwards;/*si l'animation doit se terminer elle garde sa valeur finale*/
+	animation-delay : 0s;/*faire démarer une animation un peu en retard*/
+  animation-timing-function: linear;
+}
+
+#p1pscht{
+  opacity: 0;
+  position: absolute;
+  top: 772px;
+  left: 966px;
+  rotate:-10deg;
+  font-size: 30px;
+  font-variation-settings: "SPAC" 100, "wght" 200;
+  animation-name: opa;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; /*nombre d'itération de l'animation*/
+  animation-direction: alternate;/*lire l'animation dans un sens puis dans l'autre*/
+  animation-fill-mode: forwards;/*si l'animation doit se terminer elle garde sa valeur finale*/
+	animation-delay : 0s;/*faire démarer une animation un peu en retard*/
+  animation-timing-function: linear;
+}
+
+#p1boum{
+  opacity: 0;
+  position: absolute;
+  top: 671px;
+  left: 731px;
+  rotate: 0deg;
+  font-size: 30px;
+  font-variation-settings: "SPAC" 100, "wght" 200;
+  animation-name: opa;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; /*nombre d'itération de l'animation*/
+  animation-direction: alternate;/*lire l'animation dans un sens puis dans l'autre*/
+  animation-fill-mode: forwards;/*si l'animation doit se terminer elle garde sa valeur finale*/
+	animation-delay : 0s;/*faire démarer une animation un peu en retard*/
+  animation-timing-function: linear;
+}
+
+#p1krrr{
+  opacity: 0;
+  position: absolute;
+  top: 784px;
+  left: 683px;
+  rotate: 27deg;
+  font-size: 30px;
+  font-variation-settings: "SPAC" 100, "wght" 200;
+  animation-name: opa;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; /*nombre d'itération de l'animation*/
+  animation-direction: alternate;/*lire l'animation dans un sens puis dans l'autre*/
+  animation-fill-mode: forwards;/*si l'animation doit se terminer elle garde sa valeur finale*/
+	animation-delay : 0s;/*faire démarer une animation un peu en retard*/
+  animation-timing-function: linear;
+}
+
+@keyframes opa {
+
+  15%{
+    opacity: 0;
+    font-size: 30px;
+    font-variation-settings: "SPAC" 100, "wght" 400;   
+  }
+  37%{
+    opacity: 100;
+    font-size: 90px; 
+    font-variation-settings: "SPAC" 120, "wght" 100; 
+  }
+  50%{
+    opacity: 100; 
+    font-size: 90px;  
+    font-variation-settings: "SPAC" 120, "wght" 100; 
+  }
+  55%{
+    opacity: 0;
+    font-size: 30px;
+    font-variation-settings: "SPAC" 100, "wght" 400;
+  }
+}
+
+#p2noo{
+  position: absolute;
+  top: 1562px;
+  left:732px;
+  rotate: 0deg;
+  font-size: 134px;
+  font-variation-settings: "SPAC" 120, "wght" 00;
+}
+
+#p2argh{
+  position: absolute;
+  top: 1413px;
+  left:1036px;
+  rotate: -20deg;
+  font-size: 147px;
+  font-variation-settings:"SCAN" 30, "BLED" 20;
+  animation-name: argh;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;/*lire l'animation dans un sens puis dans l'autre*/
+}
+
+#p2crac{
+  position: absolute;
+  top: 1432px;
+  left:1131px;
+  rotate: 42deg;
+  font-size: 152px;
+  font-variation-settings:"SCAN" 0, "BLED" 0;
+  mix-blend-mode:color-dodge;
+}
+
+#p2ziou{
+  position: absolute;
+  top: 1036px;
+  left:1316px;
+  rotate: -65deg;
+  font-size: 160px;
+  font-variation-settings:"SCAN" 80, "BLED" 20;
+  mix-blend-mode:color-dodge;
+  animation-name: argh;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;/*lire l'animation dans un sens puis dans l'autre*/
+  animation-delay: 2s;
+  
+}
+
+#p2boom{
+  position: absolute;
+  top: 1681px;
+  left:1000px;
+  rotate: 4deg;
+  font-size: 161px;
+  font-variation-settings:"SCAN" -33, "BLED" 20;
+  z-index: 1;
+  mix-blend-mode:color-dodge;
+  animation-name: boom;
+  animation-duration:2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+  animation-direction: alternate;/*lire l'animation dans un sens puis dans l'autre*/
+}
+
+#p2waa{
+  position: absolute;
+  top: 1540px;
+  left:1367px;
+  rotate: -22deg;
+  font-size: 337px;
+  font-variation-settings:"SCAN" 100, "BLED" 20;
+  color: rgb(223, 157, 71);
+}
+
+@keyframes no{
+  0%{
+    font-size: 134px;
+    font-variation-settings: "SPAC" 120, "wght" 100;
+    color: whitesmoke;
+    transform: rotate(0deg);
+  }
+  10% { transform: rotate(5deg); }
+  30% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+  70% { transform: rotate(-5deg); }
+  90% { transform: rotate(5deg); }
+  100%{
+    font-size: 200px;
+    font-variation-settings: "SPAC" 120, "wght" 500;
+    color: rgb(240, 89, 89);
+    transform: rotate(0deg);
+  }
+}
+
+#p2noo:hover{
+  animation-name: no;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  
+}
+
+@keyframes boom{
+  0%{
+    font-size: 134px;
+    font-variation-settings: "SCAN" -53, "BLED" 20;
+    opacity: 0;
+  }
+  100%{
+    font-size: 250px;
+    font-variation-settings: "SCAN" 100, "BLED" 100;
+    opacity: 100;
+
+  }
+}
+
+@keyframes argh{
+  0%{
+    font-size: 147px;
+    font-variation-settings: "SCAN" 30, "BLED" 20;
+  }
+  100%{
+    font-size: 250px;
+    font-variation-settings: "SCAN" 100, "BLED" 100;
+    top: 1300px;
+    left:900px;
+
+  }
+}
+
+#p3tata{
+  position: absolute;
+  top: 2007px;
+  left:31px;
+  rotate: -13deg;
+  font-size: 320px;
+  animation-name: clignoter;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+#p3arf{
+  position: absolute;
+  top: 2347px;
+  left:411px;
+  rotate: 0deg;
+  font-size: 248px;
+  animation-name: arf;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  font-variation-settings: "SPAC" 100, "wght" 300;
+}
+
+@keyframes arf {
+  0%{
+    left: -100px;
+  }
+  10%{
+    left: 50px;
+    font-size: 248px;
+    top: 2347px;
+  }
+
+  30%{
+    left: 100px;
+  }
+  40%{
+    left: 200px;
+  }
+  60%{
+    left:411px;
+    font-variation-settings: "SPAC" 100, "wght" 300;
+  }
+  70%{
+    left: 250px;
+    font-variation-settings: "SPAC" 120, "wght" 300;
+  }
+  90%{
+    left: 411px;
+  }
+  
+}
+#p3clac{
+  position: absolute;
+  top: 2649px;
+  left:673px;
+  rotate: 10deg;
+  font-size: 103px;
+  font-variation-settings: "SPAC" 110, "wght" 300;
+}
+#p3bam{
+  position: absolute;
+  top: 2639px;
+  left:9px;
+  rotate: 7deg;
+  font-size: 362px;
+  animation-name: bim;
+  animation-duration:1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+  animation-direction: alternate;
+}
+#p3boom{
+  position: absolute;
+  top: 2394px;
+  left: 33px;
+  rotate: 19deg;
+  font-size: 54px;
+  font-variation-settings: "SPAC" 120, "wght" 500;
+}
+#p3piou{
+  position: absolute;
+  top: 2590px;
+  left: 214px;
+  rotate: -12deg;
+  font-size: 68px;
+  animation: float 2s ease-in-out infinite;
+}
+#p3clic{
+  position: absolute;
+  top: 1865px;
+  left: -56px;
+  rotate: 65deg;
+  font-size: 138px;
+}
+#p3waza{
+  position: absolute;
+  top: 2268px;
+  left: 675px;
+  rotate: 0deg;
+  font-size: 85px;
+  font-variation-settings: "SPAC" 120, "wght" 170;
+}
+
+
+#p3rrr{
+  position: absolute;
+  top: 2397px;
+  left:817px;
+  rotate: 0deg;
+  font-size: 201px;
+  mix-blend-mode: color-dodge;
+  animation-name: rr;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  z-index: 4;
+  font-variation-settings: "SCAN" -53, "BLED" 100;
+}
+@keyframes rr {
+  0%{
+    left: 1328px;
+  }
+  10%{
+    left: 1178px;
+    top: 2397px;
+    font-size: 201px;
+  }
+
+  30%{
+    left: 1128px;
+  }
+  40%{
+    left: 1028px;
+  }
+  60%{
+    left:817px;
+    font-variation-settings: "SCAN" -53, "BLED" 100;
+  }
+  70%{
+    left: 980px;
+    font-variation-settings: "SCAN" 100, "BLED" 0;
+  }
+  90%{
+    left: 817px;
+  }
+}
+
+#p3grr{
+  position: absolute;
+  top: 2065px;
+  left:952px;
+  rotate: -40deg;
+  font-size: 151px;
+}
+
+
+#p3ha{
+  position: absolute;
+  top: 2615px;
+  left:833px;
+  rotate: -4deg;
+  font-size: 367px;
+  mix-blend-mode:color-dodge;
+  z-index: 3;
+  animation-name: shaking;
+  animation-duration:0.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction:normal;
+}
+@keyframes shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+#p3argh{
+  position: absolute;
+  top: 2398px;
+  left: 1060px;
+  rotate: -60deg;
+  font-size: 244px;
+}
+#p3aah{
+  position: absolute;
+  top: 2203px;
+  left: 1217px;
+  rotate: -23deg;
+  font-size: 117px;
+  animation: float 4s ease-in-out infinite;
+  color: rgb(223, 157, 71);
+}
+
+@keyframes bim{
+  0%{
+    font-size: 134px;
+    font-variation-settings: "SPAC" 120, "wght" 300;
+    opacity: 0;
+  }
+  100%{
+    font-size: 362px;
+    font-variation-settings: "SPAC" 100, "wght" 900;
+    opacity: 100;
+
+  }
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+
+#p4cr{
+  position: absolute;
+  top: 3468px;
+  left: 88px;
+  rotate: -69deg;
+  font-size: 200px;
+  animation-name: cr ;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes cr {
+  0%{
+    top: 3468px;
+  left: 88px;
+  rotate: -69deg;
+  }
+
+  100%{
+    top: 3597px;
+    left: -1408px;
+  }
+}
+
+#p4ac{
+  position: absolute;
+  top: 3224px;
+  left: 171px;
+  rotate: -69deg;
+  font-size: 200px;
+  animation-name: ac;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+@keyframes ac {
+  0%{
+    top: 3224px;
+    left: 171px;
+    rotate: -69deg;
+  }
+
+  100%{
+    top: 2913px;
+  left: 1635px;
+  rotate: 1471deg;
+  }
+}
+
+#p4tchou{
+  position: absolute;
+  top: 3055px;
+  left: 1196px;
+  rotate: -15deg;
+  font-size: 170px;
+  animation-name: tchou;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes tchou {
+  0%{
+    top: 3055px;
+    left: 1196px;
+    font-variation-settings: "SCAN"0;
+  }
+  20%{
+    font-variation-settings: "SCAN"100;
+  }
+  100%{
+    top: 3597px;
+    left: -1408px;
+    font-variation-settings: "SCAN"0;
+  }
+}
+ 
+  
+  
+  
+  
